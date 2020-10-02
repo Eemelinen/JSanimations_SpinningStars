@@ -55,5 +55,14 @@ function animate() {
     particleArray[i].update();
   }
 }
+
+/** 
+ * ! Event listener for window size change. Rerender snowflakes */
+window.addEventListener('resize', function() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  init();
+});
+
 init();
 animate();
