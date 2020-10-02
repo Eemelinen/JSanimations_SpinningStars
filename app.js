@@ -21,8 +21,8 @@ class Particle {
     let x = Math.cos(this.position) * this.moveRadius + canvas.width / 2;
     let y = Math.sin(this.position) * this.moveRadius + canvas.height / 2;
     ctx.beginPath();
-    // ctx.arc(x, y, this.moveRadius / 15, 0, Math.PI * 2);
-    drawStar(x, y, 6, this.size, this.size / 2);
+    ctx.arc(x, y, this.moveRadius / 15, 0, Math.PI * 2);
+    // drawStar(x, y, 6, this.size, this.size / 2);
     ctx.closePath();
     ctx.fillStyle = 'white';
     ctx.fill();
