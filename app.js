@@ -24,7 +24,7 @@ class Particle {
     ctx.arc(x, y, this.moveRadius / 15, 0, Math.PI * 2);
     // drawStar(x, y, 6, this.size, this.size / 2);
     ctx.closePath();
-    ctx.fillStyle = 'white';
+    ctx.fillStyle = 'gold';
     ctx.fill();
   }
 
